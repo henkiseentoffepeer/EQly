@@ -1,0 +1,51 @@
+:root {
+  --font: system-ui, sans-serif;
+  --color-bg: #f5f7fa;
+  --color-fg: #222;
+  --color-accent: #3b82f6;
+  --color-muted: #d1d5db;
+  --color-card: #fff;
+  --color-shadow: rgba(0,0,0,0.04);
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  background: var(--color-bg);
+  color: var(--color-fg);
+  transition: background 0.25s, color 0.25s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background: var(--color-card);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px var(--color-shadow);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: background 0.25s, color 0.25s;
+}
+
+@media (max-width: 700px) {
+  .card {
+    padding: 0.5rem;
+  }
+}

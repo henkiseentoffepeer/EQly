@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #eaf6f6;
+  color: #263238;
+}
+a { color: #00796b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.app-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+input, select, textarea, button {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+  padding: 0.5em;
+  border-radius: 6px;
+  border: 1px solid #b2dfdb;
+  background: #fff;
+}
+button { background: #b2dfdb; border: none; cursor: pointer; }
+button:active { background: #80cbc4; }
+.module-section {
+  margin-bottom: 2.5rem;
+}
+label { font-weight: 500; }
+@media (prefers-color-scheme: dark) {
+  body { background: #222e2e; color: #eaf6f6; }
+  input, select, textarea, button { background: #263238; color: #eaf6f6; border-color: #37474f; }
+  button { background: #455a64; }
+  button:active { background: #263238; }
+}
